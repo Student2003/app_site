@@ -30,7 +30,7 @@ class Planning
 
     const separateurHeure = 'h';
 
-    public function __construct($jourDebut=1, $jourFin= 5,$heureDebut=540,$heureFin= 1260, $pas=60, $contenu = Array())
+    public function __construct($jourDebut=1, $jourFin= 5,$heureDebut=540,$heureFin= 1260, $pas=30, $contenu = Array())
     {
         $this->jourDebut= $jourDebut;
         $this->jourFin = $jourFin;
