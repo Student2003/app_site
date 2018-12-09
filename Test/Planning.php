@@ -115,7 +115,7 @@ class Planning
             $htmlTable .= self::htmlRowOpen;
             $htmlTable .='<td class = "cellHour">'.$this->convertMinutesEnHeuresMinutes($key).'</td>';
             foreach ($this->tabSemaine as $tabHeures){
-                $htmlTable .= $tabHeures($key);
+                $htmlTable .= $tabHeures[$key];
             }
             $htmlTable .= self::htmlRowClose;
         }
