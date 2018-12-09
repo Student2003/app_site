@@ -95,6 +95,41 @@ class Planning
         echo '</pre>';
     }
 
-    
+    public function genererHtmlTable(){
+        $htmlTable = self::htmlTableOpen;
+
+        $htmlTable .=$this->genererBandeauJours();
+
+        $key = $this->heureDebut;
+        $keyEnd = $this->heureFin;
+        for($key; $keyEnd; $key+=$this->pas){
+            $htmlTable .= self::htmlRowOpen;
+            $htmlTable .='<td class = "cellHour">'.$this->convertMinutesEnHeuresMinutes($key).'</td>';
+            foreach ($this->tabSemaine as $tabHeures){
+                $htmlTable .= $tabHeures($key);
+            }
+            $htmlTable .= self::htmlRowClose;
+        }
+        $htmlTable .= self::htmlTableClose;
+        return $htmlTable;
+    }
+
+    public function afficherHtmlTable(){
+        echo $this->genererHtmlTable();
+    }
+
+    private function genererBandeauJours(){
+        $daysLine = self::htmlRowOpen;
+        $daysLine .=$this->genererCelluleHTML(self::htmlSpace);
+        $day = $this->jourDebut;
+        while ($day <= $this->jourFin){
+            $daysLine .= $this->genererCelluleHTML($this->joursFr($day), '', 'cellDay');
+            $day++;
+        }
+        $daysLine .= self::htmlRowClose;
+        return $daysLine;
+    }
+
+
 
 }
