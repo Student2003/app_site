@@ -3,15 +3,15 @@ function seeHome(){
     require 'views/main_help.php';
 }
 function prise_de_rdv(){
-    require "views/views1.php";
+    require "views/prise_de_rdv.php";
 }
 function formulaire_panne(){
-    require "views/view2.php";
+    require "views/formulaire_panne.php";
 }
 function questions_frequentes(){
-    require "views/view3.php";
+    require "views/faq.php";
 }
 function contact(){
-    require "views/view4.php";
+    require "views/contact.php";
 }
 ?>
