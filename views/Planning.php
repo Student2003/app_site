@@ -8,5 +8,9 @@
 
 class Planning
 {
+    function __construct()
+    {
+
+    }
 
 }

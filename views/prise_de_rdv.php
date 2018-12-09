@@ -23,8 +23,8 @@
                 <label><input type="radio" name="cause_rdv" value="autre">Autres</label>
             </label> <br>
             <div class ="planning">
-
-        </div>
+                <?php include ("AffichagePlanning.php"); ?>
+            </div>
             <a href="index.php?action=conf_rdv"> Valider  </a>
         </p>
     </div>
