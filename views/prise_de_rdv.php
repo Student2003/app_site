@@ -22,7 +22,7 @@
                 <label><input type="radio" name="cause_rdv" value="devis">Devis</label>
                 <label><input type="radio" name="cause_rdv" value="autre">Autres</label>
             </label> <br>
-            <a href="views/confirmation_rdv.php" target="_blank"> Valider  </a>
+            <a href="index.php?action=conf_rdv"> Valider  </a>
         </p>
     </div>
 </div>

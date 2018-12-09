@@ -22,6 +22,14 @@ if (isset($_GET["action"])) {
             contact();
             break;
 
+        case "conf_rdv":
+            confirmation_rdv();
+            break;
+
+        case "conf_fp":
+            confirmation_panne();
+            break
+
         default :
             echo"error 404";
             break;

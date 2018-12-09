@@ -14,4 +14,12 @@ function questions_frequentes(){
 function contact(){
     require "views/contact.php";
 }
+
+function confirmation_rdv(){
+    require "views/confirmation_rdv";
+}
+
+function confirmation_panne(){
+    require "views/confirmation_panne";
+}
 ?>
