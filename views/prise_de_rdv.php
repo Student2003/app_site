@@ -36,7 +36,7 @@
             foreach ($dayTimes as $dayTime) {
                 echo (strftime('%a %Y/%m/%d', $dayTime) . "<br/>");
             }?>
-            <button>Valider</button>
+            <a href="views/confirmations_rdv" target="_blank"> <input type="button" value="Bouton"> Valider </a>
         </p>
     </div>
 </div>
