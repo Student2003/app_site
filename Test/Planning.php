@@ -130,6 +130,31 @@ class Planning
         return $daysLine;
     }
 
+    private function genererCelluleHTML($contenuCellule, $colspan ='', $class = '', $ngColor = ''){
+        $contenuHTML = '<td';
+        if (!empty($colspan))
+            $celluleHTML .= 'rowspan="' .$colspan. '"';
+        if (!empty($class))
+            $celluleHTML .= ' class="'.$class. '"';
+        if (!empty($bgColor))
+            $celluleHTML .= ' bgColor="'.$bgColor. '"';
+        $celluleHTML .= '/>';
+        $celluleHTML .= $contenuCellule;
+        $celluleHTML .= '</td>';
+        return $celluleHTML;
+    }
+
+    private function jourFr($dayNum){
+        return $this->joursFr[$dayNum];
+    }
+
+    private function convertMinutesEnHeuresMinutes($minutes){
+        $heure = floor($minutes/60);
+        $minutes = ($minutes % 60);
+        $minutes = str_pad($minutes, 2, '0', STR_PAD_LEFT);
+        return($heure. self::separateurHeure .$minutes);
+    }
+
 
 
 }
