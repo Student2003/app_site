@@ -8,7 +8,12 @@
 
 class Planning
 {
-    function __construct()
+    private $jourdebut;
+    private $jourfin;
+    private $heuredebut;
+    private $heurefin;
+    private $pas;
+    function __construct($jourdebut, $jourfin, $heuredebut, $heurefin, $pas)
     {
 
     }
