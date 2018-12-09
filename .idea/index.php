@@ -28,7 +28,7 @@ if (isset($_GET["action"])) {
 
         case "conf_fp":
             confirmation_panne();
-            break
+            break;
 
         default :
             echo"error 404";

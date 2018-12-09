@@ -1,7 +1,4 @@
-
-
 <?php
-
 define("ROOT", __DIR__);
 
 require ROOT . "/controllers/controller.php";
@@ -23,6 +20,14 @@ if (isset($_GET["action"])) {
 
         case "contact":
             contact();
+            break;
+
+        case "conf_rdv":
+            confirmation_rdv();
+            break;
+
+        case "conf_fp":
+            confirmation_panne();
             break;
 
         default :

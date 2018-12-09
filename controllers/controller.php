@@ -16,10 +16,10 @@ function contact(){
 }
 
 function confirmation_rdv(){
-    require "views/confirmation_rdv";
+    require "views/confirmation_rdv.php";
 }
 
 function confirmation_panne(){
-    require "views/confirmation_panne";
+    require "views/confirmation_panne.php";
 }
 ?>
