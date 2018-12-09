@@ -13,8 +13,17 @@ class Planning
     private $heuredebut;
     private $heurefin;
     private $pas;
+
     function __construct($jourdebut, $jourfin, $heuredebut, $heurefin, $pas)
     {
+        this.$jourdebut = $jourdebut;
+        this.$jourfin = $jourfin;
+        this.$heuredebut = $heuredebut;
+        this.$heurefin = $heurefin;
+        this.$pas = $pas;
+    }
+
+    function Afficher(){
 
     }
 
