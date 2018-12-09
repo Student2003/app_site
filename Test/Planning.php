@@ -44,6 +44,15 @@ class Planning
         $this->insererContenus(contenus);
     }
 
+    public function genererMinutesKeys(){
+        $keys = Array();
+        for ($key = $this->heureDebut; $key<= $this->heureFin; $key+=$this->pas){
+            $keys[]= $key;
+        }
+        $this->$keys = $keys;
+        return $keys;
+    }
+
     private function initTableauJour(){
         if ($this->pas != 0){
             $numCells = ($this->heureDebut -$this->heureFin)/ $this->pas;
@@ -58,7 +67,7 @@ class Planning
 
     private function initTableauSemaine(){
         $this->tabSemaine = Array();
-        $tabJour = $this->initTableauSemaine();
+        $tabJour = $this->initTableauJour();
         for ($i=$this->jourDebut; $i<=$this->jourFin; $i++) {
             $this->tabSemaine[$i] = $tabJour;
         }
@@ -78,7 +87,7 @@ class Planning
         $duree = $this->getNumeroCellule($contenuCellule->heureDebut, $contenuCellule->heureFin);
         $contenu = $contenuCellule->contenu.'<br/>';
         $contenu .= $this->convertMinutesEnHeuresMinutes($contenuCellule->heureFin);
-        $contenu .= ' - '. this->convertMinutesEnHeuresMinutes($contenuCellule->heureFin);
+        $contenu .= ' - '. $this->convertMinutesEnHeuresMinutes($contenuCellule->heureFin);
 
         $this->tabSemaine[$contenuCellule->numJour][$contenuCellule->heureDebut] =$this->genererCelluleHTMLA($contenu,$duree,'',$contenuCellule->bgColor);
 
@@ -123,7 +132,7 @@ class Planning
         $daysLine .=$this->genererCelluleHTML(self::htmlSpace);
         $day = $this->jourDebut;
         while ($day <= $this->jourFin){
-            $daysLine .= $this->genererCelluleHTML($this->joursFr($day), '', 'cellDay');
+            $daysLine .= $this->genererCelluleHTML($this->jourFr($day), '', 'cellDay');
             $day++;
         }
         $daysLine .= self::htmlRowClose;
@@ -133,7 +142,7 @@ class Planning
     private function genererCelluleHTML($contenuCellule, $colspan ='', $class = '', $ngColor = ''){
         $contenuHTML = '<td';
         if (!empty($colspan))
-            $celluleHTML .= 'rowspan="' .$colspan. '"';
+            $celluleHTML = 'rowspan="' .$colspan. '"';
         if (!empty($class))
             $celluleHTML .= ' class="'.$class. '"';
         if (!empty($bgColor))
