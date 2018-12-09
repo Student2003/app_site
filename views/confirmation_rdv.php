@@ -15,12 +15,6 @@
     <div class="corps">
         <h1>Prise de rendez-vous</h1>
         <p>
-            <label> Cause :
-                <label><input type="radio" name="cause_rdv" value="panne">Panne</label>
-                <label><input type="radio" name="cause_rdv" value="installation">Installation</label>
-                <label><input type="radio" name="cause_rdv" value="devis">Devis</label>
-                <label><input type="radio" name="cause_rdv" value="autre">Autres</label>
-            </label> <br>
             Votre demande de rendez-vous a bien été enregistrée, vous recevrez sous peu un e-mail de confirmation.
         </p>
     </div>
