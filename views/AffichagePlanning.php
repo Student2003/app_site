@@ -8,15 +8,15 @@
 include ("Planning.php");
 
 if ($_GET['cause_rdv'] == "panne"){
-    $planning = new Planning();
+    $planning = new Planning(1,5,540,1080,60);
     $planning -> Afficher();
 }elseif ($_GET['cause_rdv'] == "installation"){
-    $planning = new Planning();
+    $planning = new Planning(1,5,540,1080,60);
     $planning -> Afficher();
 }elseif ($_GET['cause_rdv'] == "Devis"){
-    $planning = new Planning();
+    $planning = new Planning(1,5,540,1080,60);
     $planning -> Afficher();
 }elseif ($_GET['cause_rdv'] == "autre"){
-    $planning = new Planning();
+    $planning = new Planning(1,5,540,1080,60);
     $planning -> Afficher();
 }
