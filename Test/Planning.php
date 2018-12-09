@@ -89,4 +89,12 @@ class Planning
         }
     }
 
+    public function debugPHPArrays(){
+        echo '<pre>';
+        print_r($this->tabSemaine);
+        echo '</pre>';
+    }
+
+    
+
 }
