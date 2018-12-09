@@ -31,7 +31,7 @@
             <label>
                 Date de la panne : <input type="date" name="date" JJ/MM/AAAA >
             </label> <br>
-            <button>Envoyer</button>
+            <a href="index.php?action=conf_fp"> Envoyer  </a>
         </p>
     </div>
 </div>
