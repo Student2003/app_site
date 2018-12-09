@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="views/CSS/style1.css">
-<link rel="stylesheet" href="views/CSS/style2.css">
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
 <div class = "wrapper">
     <div class ='header'>
