@@ -22,10 +22,17 @@
                 <label><input type="radio" name="cause_rdv" value="installation">Installation</label>
                 <label><input type="radio" name="cause_rdv" value="devis">Devis</label>
                 <label><input type="radio" name="cause_rdv" value="autre">Autres</label>
+            </label> <br> <br>
+            <label> Date : <br>
+                <input type="date" name="date" JJ/MM/AAAA >
+            </label> <br><br>
+            <label> Jour de la semaine :
+                <select name="heure">
+                    <option value = "matin">9h à 12h</option>
+                    <option value = "debutap">13h à 15h</option>
+                    <option value = "finap">15 à 18h</option>
+                </select>
             </label> <br>
-            <div class ="planning">
-                <?php include ("AffichagePlanning.php"); ?>
-            </div>
             <a href="index.php?action=conf_rdv"> Valider  </a>
         </p>
     </div>
