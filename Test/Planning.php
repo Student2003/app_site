@@ -8,7 +8,7 @@
 
 class Planning
 {
-    private     $joursFr = Array(0=>'Dimanche', 1=> 'Lundi', 2=>'Mardi', 3=>'Mercredi', 4=>'Jeudi',5=>'Vendredi', 6=> 'Samedi');
+    private $joursFr = Array(0=>'Dimanche', 1=> 'Lundi', 2=>'Mardi', 3=>'Mercredi', 4=>'Jeudi',5=>'Vendredi', 6=> 'Samedi');
 
     private $jourDebut;
     private $jourFin;
@@ -30,7 +30,7 @@ class Planning
 
     const separateurHeure = 'h';
 
-    public function __construct($jourDebut=1, $jourFin= 5,$heureDebut=540,$heureFin= 1260, $pas=30, $contenu = Array())
+    public function __construct($jourDebut=1, $jourFin= 5, $heureDebut=540, $heureFin= 1260, $pas=30, $contenu = Array())
     {
         $this->jourDebut= $jourDebut;
         $this->jourFin = $jourFin;
@@ -41,7 +41,7 @@ class Planning
 
         $this->initTableauSemaine($this->contenu);
         //$this->>debugPJPArrays();
-        $this->insererContenus(contenus);
+        $this->insererContenus($contenu);
     }
 
     public function genererMinutesKeys(){
@@ -89,7 +89,7 @@ class Planning
         $contenu .= $this->convertMinutesEnHeuresMinutes($contenuCellule->heureFin);
         $contenu .= ' - '. $this->convertMinutesEnHeuresMinutes($contenuCellule->heureFin);
 
-        $this->tabSemaine[$contenuCellule->numJour][$contenuCellule->heureDebut] =$this->genererCelluleHTMLA($contenu,$duree,'',$contenuCellule->bgColor);
+        $this->tabSemaine[$contenuCellule->numJour][$contenuCellule->heureDebut] =$this->genererCelluleHTML($contenu,$duree,'',$contenuCellule->bgColor);
 
         $key = $contenuCellule->heureDebut;
         for ($cpt = $duree-1; $cpt>0; $cpt--){
