@@ -25,8 +25,13 @@
         <p> - Prise de rendez-vous avec un technicien Domisep <br>
         - Signaler une panne <br>
         - Les questions fréquentes <br>
-        - Contact</p></div>
+        - Contact <br>
+        - Messagerie <br>
+        </p>
+
     </div>
+    </div>
+<?php include ("footer.php"); ?>
 </body>
 </html>
 <?php
