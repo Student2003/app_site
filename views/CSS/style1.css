@@ -1,11 +1,18 @@
-.menu {
-    grid-row: 2/4;
-    font-family: Comfortaa;
-}
+
 .wrapper{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-auto-rows: 10em;
+}
+
+.menu {
+    grid-row: 2/4;
+    font-family: Comfortaa;
+}
+
+.corps{
+    border: 2px salmon;
+    font-family: Comfortaa;
 }
 
 .header{
@@ -13,9 +20,6 @@
     margin-bottom: 10px;
 }
 
-.corps{
-    font-family: Comfortaa;
-}
 
 
 

@@ -9,12 +9,16 @@
 
 <body>
 <div class = "wrapper">
+    <div class ='header'>
+
+    </div>
     <div class="menu">
         <nav>
-            <p><a href="index.php?action=faq">Les questions fréquentes</a></p>
+            <p><a href="index.php?">Les questions fréquentes</a></p>
             <p><a href="index.php?action=signaler_une_panne">Formulaire de panne</a></p>
             <p><a href="index.php?action=messagerie"> Messagerie </a></p>
             <p><a href="index.php?action=prise_de_rdv">Prise de rendez-vous</a></p>
+
         </nav>
     </div>
     <div class="corps">
@@ -32,6 +36,8 @@
             </label> <br>
             <a href="index.php?action=conf_fp"> Envoyer  </a>
         </p>
+
+
     </div>
 </div>
 

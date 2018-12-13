@@ -36,7 +36,8 @@
 </div>
 
 </body>
-</html><?php
+</html>
+<?php
 /**
  * Created by IntelliJ IDEA.
  * User: Akhara
