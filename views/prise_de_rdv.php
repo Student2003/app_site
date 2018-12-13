@@ -1,5 +1,4 @@
-    <link rel="stylesheet" href="views/CSS/style1.css">
-    <link rel="stylesheet" href="views/CSS/style2.css">
+    <link rel="stylesheet" href="views/CSS/style.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
 <div class = "wrapper">
     <div class="menu">
@@ -29,7 +28,7 @@
                     <option value = "finap">15 à 18h</option>
                 </select>
             </label> <br>
-            <a href="index.php?action=conf_rdv"> Valider  </a>
+            <a href="index.php?action=conf_rdv"> Valider , non je dec attend encore !!!!!!</a>
         </p>
     </div>
 </div>

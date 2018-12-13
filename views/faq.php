@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Les questions fréquentes</title>
 </head>
-<link rel="stylesheet" href="views/CSS/style1.css">
+<link rel="stylesheet" href="views/CSS/style.css">
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
 
 <body>
