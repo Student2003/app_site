@@ -35,6 +35,7 @@
 </div>
 
 </body>
+<?php incluce ("footer.php"); ?>
 </html>
 <?php
 /**
