@@ -68,6 +68,7 @@
         position: absolute;
         left: 0;
         padding: 4px;
+        font-size : 1vw;
     }
     .grille
     {
@@ -96,6 +97,7 @@
         font-weight: bold;
         margin-top : 0px;
         margin-bottom : 5px;
+        font-size : 2vw;
     }
 </style>
 <?php
