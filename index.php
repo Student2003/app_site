@@ -14,13 +14,6 @@ if (isset($_GET["action"])) {
             formulaire_panne();
             break;
 
-        case "faq":
-            questions_frequentes();
-            break;
-
-        case "contact":
-            contact();
-            break;
 
         case "conf_rdv":
             confirmation_rdv();
@@ -30,12 +23,28 @@ if (isset($_GET["action"])) {
             confirmation_panne();
             break;
 
+        case "messagerie":
+            messagerie();
+            break;
+
+        case "nouveau_message":
+            messagerie();
+            break;
+
+        case "message_envoye":
+            message_envoye();
+            break;
+
+        case "message_recu":
+            message_recu();
+            break;
+
         default :
             echo"error 404";
             break;
     }
 }
 else {
-    seeHome();
+    questions_frequentes();
 }
 ?>

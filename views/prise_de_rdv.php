@@ -3,7 +3,7 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
 <div class = "wrapper">
     <div class ='header'>
-        <?php include ("header.php"); ?>
+
     </div>
     <div class="menu">
         <nav>
@@ -37,7 +37,7 @@
         </p>
     </div>
 </div>
-    <?php include ("footer.php"); ?>
+
 </body>
 </html>
 <?php

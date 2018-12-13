@@ -9,7 +9,6 @@
 
 <body>
 <div class = "wrapper">
-    <div class="header"> <?php include ("header.php"); ?> </div>
     <div class="menu">
         <nav>
             <p><a href="index.php?action=prise_de_rdv">Prise de rendez-vous</a></p>
@@ -36,7 +35,7 @@
         </p>
     </div>
 </div>
-<?php include ("footer.php"); ?>
+
 </body>
 </html>
 <?php

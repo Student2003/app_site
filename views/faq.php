@@ -10,7 +10,6 @@
 <body>
 <div class = "wrapper">
     <div class ='header'>
-        <?php include ("header.php"); ?>
     </div>
     <div class="menu">
         <nav>
@@ -26,7 +25,6 @@
         <p>Ici il est possible de visualiser les questions les plus posées. </p>
     </div>
 </div>
-<?php include ("footer.php"); ?>
 </body>
 </html>
 <?php
