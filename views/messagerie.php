@@ -9,9 +9,6 @@
 
 <body>
 <div class = "wrapper">
-    <div class ='header'>
-
-    </div>
     <div class="menu">
         <nav>
             <p><a href="index.php?action=faq">Les questions fréquentes</a></p>

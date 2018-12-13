@@ -6,11 +6,15 @@
 }
 
 .menu {
-    grid-row: 2/4;
+    grid-column: 1;
+    grid-row-end: -1;
+    border: 2px salmon;
     font-family: Comfortaa;
 }
 
 .corps{
+    grid-row-end: -1;
+    grid-column: 2/span 3;
     border: 2px salmon;
     font-family: Comfortaa;
 }

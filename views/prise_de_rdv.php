@@ -2,9 +2,6 @@
     <link rel="stylesheet" href="views/CSS/style2.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
 <div class = "wrapper">
-    <div class ='header'>
-
-    </div>
     <div class="menu">
         <nav>
             <p><a href="index.php?action=prise_de_rdv">Prise de rendez-vous</a></p>
