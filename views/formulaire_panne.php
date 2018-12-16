@@ -16,19 +16,22 @@
     </div>
     <div class="corps">
         <H1>Formulaire de panne</H1>
-        <p>
+        <p> <form method="post" action="index.php?action=ajouter_formulaire">
             <label>
-                Numéro du capteur : <input type="number" name="id">
+                Numéro de série de l'équipement : <input type="number" name="serie">
             </label> <br>
             <label>
                 Cause de la panne : <br>
-                <textarea name="cause_panne" rows="5" cols="50"></textarea>
+                <input type="text" name="message" required>
+
             </label> <br>
             <label>
                 Date de la panne : <input type="date" name="date" JJ/MM/AAAA >
             </label> <br>
-            <a href="index.php?action=conf_fp"> Envoyer  </a>
+            <input type="submit" VALUE="Envoyer">
+
         </p>
+        </form>
 
 
     </div>

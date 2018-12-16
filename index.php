@@ -39,6 +39,10 @@ if (isset($_GET["action"])) {
             message_recu();
             break;
 
+        case "ajouter_formulaire":
+            ajout_formulaire();
+            break;
+
         default :
             echo"error 404";
             break;

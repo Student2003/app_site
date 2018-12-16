@@ -1,4 +1,5 @@
 <?php
+require "models/model.php";
 
 function prise_de_rdv(){
     require "views/prise_de_rdv.php";
@@ -32,5 +33,20 @@ function message_envoye(){
 
 function nouveau_message(){
     require "views/messagerie";
+}
+
+function ajout_formulaire(){
+    if ($_POST["serie"] && $_POST["date"] && $_POST["message"]){
+        $serie = ($_POST["serie"]);
+        $date = htmlspecialchars($_POST["date"]);
+        $message = htmlspecialchars($_POST["message"]);
+
+        insertPannes($serie, $date, $message);
+        require "views/confirmation_panne";
+    }
+    else{
+        require "views/fail_panne";
+    }
+
 }
 ?>
