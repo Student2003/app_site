@@ -1,4 +1,4 @@
-<?php incluce ("header.php"); ?>
+<?php include ("header.php"); ?>
 <link rel="stylesheet" href="views/CSS/style.css">
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
 
@@ -28,7 +28,7 @@
 </div>
 
 </body>
-<?php incluce ("footer.php"); ?>
+<?php include ("footer.php"); ?>
 </html>
 <?php
 /**

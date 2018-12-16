@@ -1,4 +1,4 @@
-<?php incluce ("header.php"); ?>
+<?php include ("header.php"); ?>
 </head>
 <link rel="stylesheet" href="views/CSS/style.css">
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
@@ -18,7 +18,7 @@
         <p>Ici il est possible de visualiser les questions les plus posées. </p>
     </div>
 </div>
-<?php incluce ("footer.php"); ?>
+<?php include ("footer.php"); ?>
 </body>
 </html>
 <?php
