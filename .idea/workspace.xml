@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d958d3c3-0674-4e86-b5ca-42db0744b316" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/faq.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/faq.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/formulaire_panne.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/formulaire_panne.php" afterDir="false" />
-    </list>
+    <list default="true" id="d958d3c3-0674-4e86-b5ca-42db0744b316" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
