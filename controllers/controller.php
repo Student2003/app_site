@@ -36,16 +36,17 @@ function nouveau_message(){
 }
 
 function ajout_formulaire(){
-    if ($_POST["serie"] && $_POST["date"] && $_POST["message"]){
+    if ($_POST["serie"] && $_POST["message"]){
         $serie = ($_POST["serie"]);
-        $date = htmlspecialchars($_POST["date"]);
         $message = htmlspecialchars($_POST["message"]);
 
-        insertPannes($serie, $date, $message);
-        require "views/confirmation_panne";
-    }
-    else{
-        require "views/fail_panne";
+        if (verifSerie($serie)){
+            insertPannes($serie, $message);
+            require "views/confirmation_panne.php";
+        }
+        else{
+            require "views/fail_panne";
+        }
     }
 
 }

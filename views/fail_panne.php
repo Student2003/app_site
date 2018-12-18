@@ -43,6 +43,8 @@
         </p>
         </form>
 
+        <p>Le numéro de série n'est pas bon.</p>
+
 
     </div>
 </div>
