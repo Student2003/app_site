@@ -12,18 +12,19 @@ function dbConnect(){
 }
 
 
-function insertPannes($serie, $message){
+function insertPannes($serie, $message){ //Insert dans la base de donnée les nouvelles données dans la base de données
     $db = dbconnect();
-    $req = $db->prepare("INSERT INTO Pannes(date, equipment_id, message, etat, client_id ) VALUES (:DATE, :serie, :message, :mail)");
+    $utilisateurId = $_SESSION['id'];
+    $equipementId = $db->query('SELECT id from Equipements WHERE serie =$serie');
+    $req = $db->prepare("INSERT INTO Pannes(date, serie, equipement_id, message, etat, client_id ) VALUES (:DATE, :serie, $equipementId, $message, 1, $utilisateurId)");
     $req->bindParam("serie", $serie);
     $req->bindParam("message", $message);
-
     $req->execute();
     $req->closeCursor();
 }
 
 
-function verifSerie($serie){
+function verifSerie($serie){ //vérifie que le numéro de série existe et appartient bien à celui de l'utilisateur.
     $db = dbConnect();
     $verif = $db->query("SELECT piece_id FROM Equipements WHERE serie = $serie");
     if ($verif== null){
