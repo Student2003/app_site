@@ -28,17 +28,19 @@
             <label> Cause :
                 <label><input type="radio" name="cause_rdv" value="panne">Panne</label>
                 <label><input type="radio" name="cause_rdv" value="installation">Installation</label>
-                <label><input type="radio" name="cause_rdv" value="devis">Devis</label>
-                <label><input type="radio" name="cause_rdv" value="autre">Autres</label>
             </label> <br> <br>
             <label> Date : <br>
                 <input type="date" name="date" JJ/MM/AAAA >
             </label> <br><br>
             <label> Jour de la semaine :
                 <select name="heure">
-                    <option value = "matin">9h à 12h</option>
-                    <option value = "debutap">13h à 15h</option>
-                    <option value = "finap">15 à 18h</option>
+                    <option value = "9">9h à 10h</option>
+                    <option value = "10">10h à 11h</option>
+                    <option value = "11">11h à 12h</option>
+                    <option value = "14">14h à 15h</option>
+                    <option value = "15">15 à 16h</option>
+                    <option value = "16">16h à 17h</option>
+                    <option value = "17">17h à 18h</option>
                 </select>
             </label> <br>
             <a href="index.php?action=conf_rdv"> Valider , non je dec attend encore !!!!!!</a>

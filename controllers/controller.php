@@ -45,7 +45,7 @@ function ajout_formulaire(){
             require "views/confirmation_panne.php";
         }
         else{
-            require "views/fail_panne";
+            require "views/fail_panne.php";
         }
     }
 
