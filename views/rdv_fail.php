@@ -12,7 +12,7 @@
     <title>DomoLink</title>
 </head>
 <?php include("header.php"); ?>    <link rel="stylesheet" href="views/CSS/style.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
 <div class = "wrapper">
     <div class="menu">
         <nav>
@@ -35,6 +35,7 @@
             </label>
 
             <a href="index.php?action=conf_rdv"> Envoyer</a>
+            Veuiller remplir tous les champs.
         </p>
     </div>
 </div>

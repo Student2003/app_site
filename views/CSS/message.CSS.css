@@ -1,0 +1,27 @@
+section {
+    border: 1px solid #D52C42;
+    overflow: auto;
+    border-radius: 10px;
+}
+h1 {
+    font-family: "Comfortaa-Bold", serif;
+    color: #D52C42;
+    text-align: center;
+}
+table {
+    margin: 50px 30px 10px;
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid black;
+    width: 10%;
+    padding: 15px;
+    text-align: center;
+}
+th {
+    border: 1px solid black;
+    padding: 7px;
+}
+thead {
+    font-family: "Comfortaa-Bold", serif;
+}

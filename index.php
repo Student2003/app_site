@@ -23,6 +23,10 @@ if (isset($_GET["action"])) {
             confirmation_panne();
             break;
 
+        case "demande_rdv":
+            demande_rdv();
+            break;
+
         case "messagerie":
             messagerie();
             break;
@@ -41,6 +45,10 @@ if (isset($_GET["action"])) {
 
         case "ajouter_formulaire":
             ajout_formulaire();
+            break;
+
+        case "formulaire_message":
+            formulaire_message();
             break;
 
         default :

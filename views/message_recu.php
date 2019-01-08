@@ -34,7 +34,21 @@
         </nav>
     </div>
 <div class="corps">
-    <h1> Messages reçus</h1>
+    <H1> Messages reçus</H1>
+    <table>
+        <thead>
+        <tr>
+            <th>Expediteur</th>
+            <th>Objet</th>
+            <th>Message</th>
+            <th>Date</th>
+            <th>Supprimer</th>
+        </tr>
+        </thead>
+
+
+        <tbody>
+    messageRecu();
 
 
 </div>

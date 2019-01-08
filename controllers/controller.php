@@ -50,4 +50,31 @@ function ajout_formulaire(){
     }
 
 }
+
+function formulaire_message(){
+    if ($_POST['destinataire'] && $_POST['message'] && $_POST['objet']){
+        $message = htmlspecialchars($_POST['message']);
+        $destinataire = htmlspecialchars($_POST['destinataire']);
+        $objet = htmlspecialchars($_POST['objet']);
+        if (verifMail($destinataire)){
+            insertMessage($destinataire, $message, $objet);
+            require "views/confirmation_message.php";
+        }
+        else{
+            require "views/fail_message.php";
+        }
+    }
+}
+
+function demande_rdv(){
+    if ($_POST['cause_rdv'] && $_POST['dispo']){
+       $dispo = htmlspecialchars($_POST['dispo']);
+       $cause_rdv = ($_POST['cause_rdv']);
+       insertRDV($dispo, $cause_rdv);
+       require "views/confirmation_rdv.php";
+    }
+    else{
+        require "views/rdv_fail.php";
+    }
+}
 ?>

@@ -16,9 +16,7 @@ function insertPannes($serie, $message){ //Insert dans la base de donnée les no
     $db = dbconnect();
     $utilisateurId = $_SESSION['id'];
     $equipementId = $db->query('SELECT id from Equipements WHERE serie =$serie');
-    $req = $db->prepare("INSERT INTO Pannes(date, serie, equipement_id, message, etat, client_id ) VALUES (:DATE, :serie, $equipementId, $message, 1, $utilisateurId)");
-    $req->bindParam("serie", $serie);
-    $req->bindParam("message", $message);
+    $req = $db->prepare("INSERT INTO Pannes(date, serie, equipement_id, message, etat, client_id ) VALUES (:DATE, $serie, $equipementId, $message, 1, $utilisateurId)");
     $req->execute();
     $req->closeCursor();
 }
@@ -40,6 +38,59 @@ function verifSerie($serie){ //vérifie que le numéro de série existe et appar
             return false;
         }
     }
+    else {
+        return false;
+    }
+}
+
+function verifMail($destinataire){
+    $db = dbConnect();
+    $confmail = $db->query('SELECT id FROM Utilisateurs WHERE mail = $destinataire');
+    if ($confmail==null){
+        return false;
+    }
+    else return true;
+}
+
+function getIdReceveur($destinataire){
+    $db = dbConnect();
+    $id_receveur = $db->query('SELECT id FROM Utilisateurs WHERE mail =$destinataire');
+    return $id_receveur;
+}
+
+function insertMessage($destinataire, $message, $titre){
+    $db = dbConnect();
+    $envoyeur_id = $_SESSION['id'];
+    $receveur_id = getIdReceveur($destinataire);
+    $req = $db->prepare('INSERT INTO Messages(id_envoyeur, id_receveur, date, titre, message) VALUES($envoyeur_id, $receveur_id, DATE , $titre, $message)');
+    $req->execute();
+    $req->closeCursor();
+}
+
+function messageRecu(){
+    $db = dbConnect();
+    $idUtilsateur = $_SESSION['id'];
+    $message_recu = $db->query('SELECT * FROM Messages WHERE id_receveur = $idUtilsateur ORDER BY date DESC ');
+
+}
+
+function messageEnvoye(){
+    $db = dbConnect();
+    $idUtilsateur = $_SESSION['id'];
+    $message_envoye = $db->query('SELECT * FROM Messages WHERE id_envoyeur = $idUtilisateur ORDER BY date DESC ');
+
+}
+
+function insertRDV($dispo, $cause_rdv){
+    $db = dbConnect();
+    $idUtilisateur = $_SESSION['id'];
+    $req = $db->prepare("INSERT INTO RDV(id, cause, dispo) VALUES($idUtilisateur, $cause_rdv, $dispo)");
+    $req->bindParam("dispo", $dispo);
+    $req->bindParam("cause", $cause_rdv);
+    $req->execute();
+    $req->closeCursor();
+
+
 }
 
 /**

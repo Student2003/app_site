@@ -35,26 +35,22 @@
 <div class="corps">
     <h1> Nouveau message  </h1>
 
-    <label for="desinataire">Destinataire :  </label>
+    <p> <form method="post" action="index.php?action=formulaire_message">
+        <label>
+            Destinataire : <input type="email" name="destinataire">
+        </label> <br><br>
+        <label>
+            Objet : <input type="text" name="objet" required>
+        </label><br><br>
+        <label>
+            Message : <br>
+            <input type="text" name="message" required>
 
+        </label> <br>
+        <input type="submit" VALUE="Envoyer">
 
-    <select id="destinataire" name="destinataire">
-        <option value="Jean  Boursin">Jean Boursin</option>
-        <option value="Michel Vianot">Michel Vianot</option>
-        <option value="Patrick Wang">Patrick Wang</option>
-
-    </select>
-    <button id="ajoutcontact"> Ajouter un contact </button>
-    <br>
-    <label for="objet">Objet :  </label>
-
-    <input type="text" id="objet"  placeholder="Exemple : Rendez-vous technicien vendredi 18 novembre">
-    <br>
-    <label for="message">Message :  </label>
-    <br>
-    <textarea id="message" placeholder="Exemple : Bonjour, je souhaitais vous contacter à propos de..."></textarea>
-    <br>
-    <button id="envoyer"> Envoyer </button>
+    </p>
+    </form>
 </div>
 </div>
 
